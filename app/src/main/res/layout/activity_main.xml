@@ -50,18 +50,29 @@
             android:layout_marginRight="64dp"
             android:inputType="number"/>
 
+
+
+        <Spinner
+            android:id="@+id/text_gender"
+            android:layout_below="@id/text_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:textSize="30sp"/>
+
+
         <EditText
             android:id="@+id/text_dob"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/text_reg"
+            android:layout_below="@id/text_gender"
             android:hint="D.O.B"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="64dp"
             android:layout_marginRight="64dp"
-            />
-
-
+            android:inputType="date"/>
 
         <EditText
             android:id="@+id/text_email"
@@ -85,13 +96,23 @@
             android:layout_marginRight="64dp"
             android:inputType="phone"/>
 
+        <EditText
+            android:id="@+id/text_occupation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_number"
+            android:hint="Occupation"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="64dp"
+            android:layout_marginRight="64dp"
+            android:inputType="textCapWords"/>
 
 
         <Button
             android:id="@+id/submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="64dp"
+            android:layout_marginTop="75dp"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
             android:text="Submit"
